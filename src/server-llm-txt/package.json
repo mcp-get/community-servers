@@ -32,12 +32,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michaellatman/mcp-get.git"
+    "url": "git+https://github.com/mcp-get/community-servers.git"
   },
   "bugs": {
-    "url": "https://github.com/michaellatman/mcp-get/issues"
+    "url": "https://github.com/mcp-get/community-servers/issues"
   },
-  "homepage": "https://github.com/michaellatman/mcp-get#readme",
+  "homepage": "https://github.com/mcp-get/community-servers#readme",
   "publishConfig": {
     "access": "public"
   }

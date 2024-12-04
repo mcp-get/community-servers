@@ -5,8 +5,8 @@
   "description": "MCP Get servers - A collection of community MCP servers",
   "license": "MIT",
   "author": "Michael Latman (https://michaellatman.com)",
-  "homepage": "https://github.com/michaellatman/mcp-get",
-  "bugs": "https://github.com/michaellatman/mcp-get/issues",
+  "homepage": "https://github.com/mcp-get/community-servers",
+  "bugs": "https://github.com/mcp-get/community-servers/issues",
   "type": "module",
   "workspaces": [
     "src/*"

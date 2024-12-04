@@ -1,5 +1,7 @@
 # LLM.txt MCP Server
 
+[![MCP Package](https://mcp-get.com/api/badge/%40mcp-get-community%2Fserver-llm-txt)](https://mcp-get.com/packages/%40mcp-get-community%2Fserver-llm-txt)
+
 This is a Model Context Protocol (MCP) server that provides access to LLM.txt files from the [LLM.txt Directory](https://directory.llmstxt.cloud/). It supports listing available files, fetching content, and searching within files.
 
 ## Features

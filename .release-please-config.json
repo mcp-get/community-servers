@@ -2,17 +2,17 @@
   "separate-pull-requests": true,
   "include-component-in-tag": true,
   "packages": {
-    "src": {
+    ".": {
       "release-type": "simple",
       "extra-files": [
         {
           "type": "json",
-          "path": "package.json",
+          "path": "src/*/package.json",
           "jsonpath": "$.version"
         },
         {
           "type": "toml",
-          "path": "pyproject.toml",
+          "path": "src/*/pyproject.toml",
           "jsonpath": "$.project.version"
         }
       ]

@@ -1,0 +1,24 @@
+{
+  "name": "@mcp-get-community/servers",
+  "private": true,
+  "version": "0.6.1",
+  "description": "MCP Get servers - A collection of community MCP servers",
+  "license": "MIT",
+  "author": "Michael Latman (https://michaellatman.com)",
+  "homepage": "https://github.com/michaellatman/mcp-get",
+  "bugs": "https://github.com/michaellatman/mcp-get/issues",
+  "type": "module",
+  "workspaces": [
+    "src/*"
+  ],
+  "files": [],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "watch": "npm run watch --workspaces",
+    "publish-all": "npm publish --workspaces --access public",
+    "link-all": "npm link --workspaces"
+  },
+  "dependencies": {
+    "@mcp-get-community/server-llm-txt": "*"
+  }
+}

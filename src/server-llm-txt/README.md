@@ -2,7 +2,7 @@
 
 [![MCP Package](https://mcp-get.com/api/badge/%40mcp-get-community%2Fserver-llm-txt)](https://mcp-get.com/packages/%40mcp-get-community%2Fserver-llm-txt)
 
-This is a Model Context Protocol (MCP) server that provides access to LLM.txt files from the [LLM.txt Directory](https://directory.llmstxt.cloud/). It supports listing available files, fetching content, and searching within files.
+A Model Context Protocol (MCP) server that extracts and serves context from llm.txt files, enabling AI models to understand file structure, dependencies, and code relationships in development environments. This server provides comprehensive access to the [LLM.txt Directory](https://directory.llmstxt.cloud/), supporting file listing, content retrieval, and advanced multi-query search capabilities.
 
 ## Features
 
@@ -20,7 +20,7 @@ This is a Model Context Protocol (MCP) server that provides access to LLM.txt fi
 The easiest way to install is using MCP Get, which will automatically configure the server in Claude Desktop:
 
 ```bash
-npx @michaellatman/mcp-get@latest install @modelcontextprotocol/server-llm-txt
+npx @michaellatman/mcp-get@latest install @mcp-get-community/server-llm-txt
 ```
 
 ### Manual Configuration

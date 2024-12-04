@@ -1,7 +1,7 @@
 {
   "name": "@mcp-get-community/server-llm-txt",
-  "version": "0.6.1",
-  "description": "MCP server for serving llm.txt files",
+  "version": "0.6.2",
+  "description": "MCP server that extracts and serves context from llm.txt files, enabling AI models to understand file structure, dependencies, and code relationships in development environments",
   "author": "Michael Latman (https://michaellatman.com)",
   "license": "MIT",
   "type": "module",

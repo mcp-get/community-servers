@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       packages: ${{ steps.find-packages.outputs.packages }}
+      has_packages: ${{ steps.find-packages.outputs.has_packages }}
     steps:
       - uses: actions/checkout@v4
 
@@ -20,9 +21,15 @@ jobs:
         run: |
           PACKAGES=$(find . -name pyproject.toml -exec dirname {} \; | sed 's/^\.\///' | jq -R -s -c 'split("\n")[:-1]')
           echo "packages=$PACKAGES" >> $GITHUB_OUTPUT
+          if [ "$PACKAGES" = "[]" ]; then
+            echo "has_packages=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_packages=true" >> $GITHUB_OUTPUT
+          fi
 
   build:
     needs: [detect-packages]
+    if: needs.detect-packages.outputs.has_packages == 'true'
     strategy:
       matrix:
         package: ${{ fromJson(needs.detect-packages.outputs.packages) }}
@@ -60,7 +67,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     needs: [build, detect-packages]
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && needs.detect-packages.outputs.has_packages == 'true'
     strategy:
       matrix:
         package: ${{ fromJson(needs.detect-packages.outputs.packages) }}

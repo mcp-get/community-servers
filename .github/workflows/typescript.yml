@@ -51,6 +51,8 @@ jobs:
     strategy:
       matrix:
         package: ${{ fromJson(needs.detect-packages.outputs.packages) }}
+      fail-fast: false
+    continue-on-error: true
     name: Publish ${{ matrix.package }}
 
     permissions:

@@ -1,0 +1,15 @@
+{
+  "packages": {
+    "src/typescript-package": {
+      "release-type": "node",
+      "package-name": "typescript-package"
+    },
+    "src/python-package": {
+      "release-type": "python",
+      "package-name": "python-package"
+    }
+  },
+  "plugins": ["sentence-case"],
+  "bootstrap-sha": "HEAD",
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
+} 

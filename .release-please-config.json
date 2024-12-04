@@ -1,15 +1,23 @@
 {
+  "separate-pull-requests": true,
+  "include-component-in-tag": true,
   "packages": {
-    "src/typescript-package": {
-      "release-type": "node",
-      "package-name": "typescript-package"
-    },
-    "src/python-package": {
-      "release-type": "python",
-      "package-name": "python-package"
+    "src": {
+      "release-type": "simple",
+      "extra-files": [
+        {
+          "type": "json",
+          "path": "package.json",
+          "jsonpath": "$.version"
+        },
+        {
+          "type": "toml",
+          "path": "pyproject.toml",
+          "jsonpath": "$.project.version"
+        }
+      ]
     }
   },
   "plugins": ["sentence-case"],
-  "bootstrap-sha": "HEAD",
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
 } 

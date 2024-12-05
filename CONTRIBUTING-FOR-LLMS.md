@@ -12,6 +12,12 @@
   - [ ] Author set to "Michael Latman <https://michaellatman.com>"
   - [ ] MIT license specified
   - [ ] Repository information included
+  - [ ] Publishing configuration:
+    - [ ] `"private": false` set
+    - [ ] `"bin"` field configured for npx execution
+    - [ ] `"files"` field specifies publishable files
+    - [ ] `"publishConfig"` set to public access
+    - [ ] `"prepublishOnly"` script added
 
 - [ ] **TypeScript Setup**
   - [ ] ES modules support configured
@@ -89,6 +95,18 @@ Example:
   "description": "MCP server for ...",
   "main": "dist/index.js",
   "type": "module",
+  "private": false,
+  "bin": {
+    "@mcp-get-community/server-{name}": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "author": "Michael Latman <https://michaellatman.com>",
   "homepage": "https://github.com/mcp-get-community/server-{name}#readme",
@@ -102,7 +120,8 @@ Example:
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "ts-node src/index.ts"
+    "dev": "ts-node src/index.ts",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.0.1",
@@ -116,6 +135,13 @@ Example:
   }
 }
 ```
+
+The package configuration includes several important fields for npm publishing:
+- `private`: Must be set to `false` to allow publishing
+- `bin`: Makes the server executable via npx, pointing to the compiled JavaScript file
+- `files`: Specifies which files should be included in the published package
+- `publishConfig`: Ensures the package is published with public access
+- `prepublishOnly`: Automatically builds TypeScript before publishing
 
 ## Step 3: TypeScript Configuration
 

@@ -1,5 +1,45 @@
 # Contributing Guide for LLMs
 
+## Quick Checklist
+
+- [ ] **Project Structure**
+  - [ ] Directory follows `src/server-{name}` pattern
+  - [ ] Contains `src/index.ts`, `package.json`, `tsconfig.json`, `README.md`, `LICENSE`
+
+- [ ] **Package Configuration**
+  - [ ] Name follows `@mcp-get-community/server-{name}` format
+  - [ ] Required dependencies installed
+  - [ ] Author set to "Michael Latman <https://michaellatman.com>"
+  - [ ] MIT license specified
+  - [ ] Repository information included
+
+- [ ] **TypeScript Setup**
+  - [ ] ES modules support configured
+  - [ ] Strict mode enabled
+  - [ ] No TypeScript errors
+
+- [ ] **Server Implementation**
+  - [ ] Required SDK imports
+  - [ ] Zod schemas for tools
+  - [ ] Tool descriptions and schemas
+  - [ ] Proper error handling
+  - [ ] Request handlers implemented
+
+- [ ] **Documentation**
+  - [ ] Clear server description
+  - [ ] Features list
+  - [ ] Installation instructions
+  - [ ] Configuration example
+  - [ ] Tool documentation
+  - [ ] Example requests/responses
+  - [ ] Development instructions
+
+- [ ] **Final Steps**
+  - [ ] MIT License file created
+  - [ ] Root README.md updated
+  - [ ] All tests passing
+  - [ ] Code properly formatted
+
 This guide walks through the steps for creating a new MCP server in this repository. Follow these steps in order.
 
 ## Step 0: Check Existing Servers

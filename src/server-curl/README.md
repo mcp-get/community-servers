@@ -2,6 +2,8 @@
 
 An MCP server that allows LLMs to make HTTP requests to any URL using a curl-like interface.
 
+[![smithery badge](https://smithery.ai/badge/@mcp-get-community/server-curl)](https://smithery.ai/protocol/@mcp-get-community/server-curl)
+
 ## Features
 
 - Make HTTP requests to any URL

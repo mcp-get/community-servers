@@ -1,6 +1,7 @@
 # LLM.txt MCP Server
 
 [![MCP Package](https://mcp-get.com/api/badge/%40mcp-get-community%2Fserver-llm-txt)](https://mcp-get.com/packages/%40mcp-get-community%2Fserver-llm-txt)
+[![smithery badge](https://smithery.ai/badge/@mcp-get-community/server-llm-txt)](https://smithery.ai/protocol/@mcp-get-community/server-llm-txt)
 
 A Model Context Protocol (MCP) server that extracts and serves context from llm.txt files, enabling AI models to understand file structure, dependencies, and code relationships in development environments. This server provides comprehensive access to the [LLM.txt Directory](https://directory.llmstxt.cloud/), supporting file listing, content retrieval, and advanced multi-query search capabilities.
 

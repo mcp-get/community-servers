@@ -2,6 +2,8 @@
 
 A Model Context Protocol server that provides macOS-specific system information and operations.
 
+[![smithery badge](https://smithery.ai/badge/@mcp-get-community/server-macos)](https://smithery.ai/protocol/@mcp-get-community/server-macos)
+
 ## Features
 
 - System information retrieval (CPU, Memory, Disk, Network)

@@ -23,6 +23,14 @@ The easiest way to install is using MCP Get, which will automatically configure 
 npx @michaellatman/mcp-get@latest install @mcp-get-community/server-llm-txt
 ```
 
+### Installing via Smithery
+
+To install LLM.txt MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@mcp-get-community/server-llm-txt):
+
+```bash
+npx -y @smithery/cli install @mcp-get-community/server-llm-txt --client claude
+```
+
 ### Manual Configuration
 
 Alternatively, you can manually configure the server in your Claude Desktop configuration by adding this to your `claude_desktop_config.json`:

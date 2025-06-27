@@ -1,0 +1,87 @@
+{
+  "name": "mcp-youtube-extract",
+  "description": "A Model Context Protocol server for YouTube operations, extracting video information and transcripts with intelligent fallback logic.",
+  "version": "0.1.0",
+  "author": "sinjab",
+  "license": "MIT",
+  "repository": "https://github.com/sinjab/mcp_youtube_extract",
+  "homepage": "https://github.com/sinjab/mcp_youtube_extract",
+  "bugs": "https://github.com/sinjab/mcp_youtube_extract/issues",
+  "package": {
+    "type": "pypi",
+    "name": "mcp-youtube-extract",
+    "registry_url": "https://pypi.org/project/mcp-youtube-extract/"
+  },
+  "installation": {
+    "command": "pip install mcp-youtube-extract",
+    "alternatives": [
+      "pipx install mcp-youtube-extract"
+    ]
+  },
+  "configuration": {
+    "transport": "stdio",
+    "environment": {
+      "YOUTUBE_API_KEY": {
+        "description": "Your YouTube Data API key (required for video metadata)",
+        "required": true,
+        "type": "string"
+      }
+    },
+    "claude_desktop": {
+      "mcpServers": {
+        "mcp_youtube_extract": {
+          "command": "mcp_youtube_extract",
+          "env": {
+            "YOUTUBE_API_KEY": "your_youtube_api_key"
+          }
+        }
+      }
+    }
+  },
+  "capabilities": {
+    "tools": [
+      {
+        "name": "get_yt_video_info",
+        "description": "Fetch YouTube video information and transcript",
+        "parameters": {
+          "video_id": {
+            "type": "string",
+            "description": "The YouTube video ID",
+            "required": true,
+            "example": "dQw4w9WgXcQ"
+          }
+        },
+        "returns": "Formatted string containing video information and transcript"
+      }
+    ],
+    "resources": [],
+    "prompts": []
+  },
+  "features": [
+    "Extract video metadata (title, description, channel, publish date)",
+    "Get video transcripts with intelligent fallback logic",
+    "Support for auto-generated and manual transcripts",
+    "Comprehensive logging and error handling",
+    "Published on PyPI for easy installation"
+  ],
+  "tags": [
+    "youtube",
+    "video",
+    "transcript",
+    "content-extraction",
+    "media",
+    "mcp",
+    "llm",
+    "ai"
+  ],
+  "maintainers": [
+    {
+      "name": "sinjab",
+      "github": "sinjab"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/sinjab/mcp_youtube_extract/issues",
+    "documentation": "https://github.com/sinjab/mcp_youtube_extract/blob/main/README.md"
+  }
+}

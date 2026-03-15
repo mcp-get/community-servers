@@ -1,0 +1,43 @@
+{
+  "name": "@mcp-get-community/server-writbase",
+  "version": "0.1.0",
+  "description": "MCP stdio proxy for WritBase — task management for AI agent fleets",
+  "main": "dist/index.js",
+  "type": "module",
+  "private": false,
+  "bin": {
+    "@mcp-get-community/server-writbase": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "author": "WritBase <https://github.com/Writbase>",
+  "homepage": "https://github.com/Writbase/writbase#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcp-get/community-servers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mcp-get/community-servers/issues"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0",
+    "ts-node": "^10.9.0"
+  }
+}

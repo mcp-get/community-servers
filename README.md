@@ -13,6 +13,7 @@ npx @michaellatman/mcp-get@latest list
 - **[LLM.txt Server](src/server-llm-txt)** - A server for searching and retrieving content from [LLM.txt](https://llmstxt.org/) files. Provides tools for listing available files, fetching content, and performing contextual searches.
 - **[Curl Server](src/server-curl)** - A server that allows LLMs to make HTTP requests to any URL using a curl-like interface. Supports all common HTTP methods, custom headers, request body, and configurable timeouts.
 - **[macOS Server](src/server-macos)** - A server that provides macOS-specific system information and operations.
+- **[Operant MCP Server](src/server-operant-mcp)** - A security testing server with 51 tools for penetration testing, network forensics, memory analysis, and vulnerability assessment.
 
 ## Installation
 

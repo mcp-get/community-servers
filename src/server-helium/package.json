@@ -1,0 +1,40 @@
+{
+  "name": "@mcp-get-community/server-helium",
+  "version": "0.1.0",
+  "description": "Stdio MCP bridge to Helium Trades remote MCP (news, bias scoring, balanced synthesis, market data, options, strategies, memes)",
+  "author": "Michael Latman (https://michaellatman.com)",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "@mcp-get-community/server-helium": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.29.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "shx": "^0.3.4",
+    "typescript": "^5.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcp-get/community-servers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mcp-get/community-servers/issues"
+  },
+  "homepage": "https://github.com/mcp-get/community-servers#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}

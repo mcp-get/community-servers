@@ -1,4 +1,12 @@
-# MCP Get Community Servers
+# ⚠️ Archived - MCP Get Community Servers
+
+**This repository is no longer maintained and does not accept new issues or
+pull requests.**
+
+Thank you to everyone who contributed servers, fixes, and feedback to mcp-get.
+The repository remains available in read-only form for existing users.
+
+---
 
 This repository contains a collection of community-maintained Model Context Protocol (MCP) servers. All servers are automatically listed on the [MCP Get registry](https://mcp-get.com) and can be viewed and installed via CLI:
 
@@ -39,7 +47,8 @@ npm run watch
 
 ## Contributing
 
-We welcome contributions! Please feel free to submit a Pull Request.
+Thank you for your interest in contributing to mcp-get. This project is no
+longer maintained and does not accept new issues or pull requests.
 
 ## License
 
